@@ -102,8 +102,8 @@ mnIn the project directory, you can run:
 ---
 
 *Desarrollado por:*
-Elias Hernandez 
-Luis Dominguez
-Joshua Rodriguez
-Joel Rocha
-David Bustillos*
+Elias Hernandez. 
+Luis Dominguez.
+Joshua Rodriguez.
+Joel Rocha.
+David Bustillos.
