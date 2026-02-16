@@ -1,70 +1,104 @@
-# Getting Started with Create React App
+# Proyecta2 🚀
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Proyecta2** is a modern, responsive web application designed as a comprehensive academic management dashboard. This project serves as the frontend interface for a university or school system, allowing students to track their academic progress, schedules, and administrative status in a visually engaging environment.
 
-## Available Scripts
+> **Note:** This is currently a **Frontend Prototype**. The data displayed (grades, student info, attendance) is mocked for demonstration purposes.
 
-In the project directory, you can run:
+## ✨ Features
 
-### `npm start`
+- **Modern Dashboard**: A sleek, dark-themed dashboard with dynamic backgrounds and glassmorphism effects.
+- **Responsive Design**: Fully adaptable layout that works on desktops, tablets, and mobile devices.
+- **Student Module ("Alumnos")**:
+    - **Expediente**: Detailed view of student information, grades, attendance, and history.
+    - **Horario**: Schedule visualization.
+    - **Referencias**: Financial status and payment references.
+    - **Titulación**: Tracking of the degree/graduation process.
+- **Modules**:
+    - Directory, Calendar, Regulations, and Job Board sections.
+- **Interactive UI**:
+    - Sidebar navigation with collapsible support.
+    - Topbar with notifications and profile actions.
+    - Tabbed interfaces for organizing dense information.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🛠️ Technology Stack
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+This project is built using the **MERN** stack philosophy, currently focusing on the **React** frontend:
 
-### `npm test`
+- **Framework**: [React 19](https://react.dev/)
+- **Routing**: [React Router v7](https://reactrouter.com/)
+- **Styling**: [Tailwind CSS v3](https://tailwindcss.com/)
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **Build Tool**: [Create React App](https://create-react-app.dev/) (React Scripts)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 📂 Project Structure
 
-### `npm run build`
+```
+proyekta2/
+├── public/              # Static assets
+├── src/
+│   ├── components/      # Reusable UI components
+│   │   └── dashboard/   # Dashboard-specific components (Sidebar, Topbar)
+│   ├── pages/           # Main view components (routes)
+│   │   ├── Dashboard.jsx
+│   │   ├── Expediente.jsx
+│   │   ├── Horario.jsx
+│   │   └── ...
+│   ├── App.js           # Main application entry and routing
+│   └── index.css        # Global styles and Tailwind directives
+├── package.json         # Dependencies and scripts
+└── tailwind.config.js   # Tailwind configuration
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🚀 Getting Started
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Prerequisites
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Node.js** (v14 or higher recommended)
+- **npm** (comes with Node.js)
 
-### `npm run eject`
+### Installation
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1.  **Clone the repository** (if applicable) or navigate to the project folder:
+    ```bash
+    cd proyekta2
+    ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2.  **Install dependencies**:
+    ```bash
+    npm install
+    ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3.  **Start the development server**:
+    ```bash
+    npm start
+    ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+    Runs the app in the development mode.\
+    Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-## Learn More
+    The page will reload when you make changes.\
+    You may also see any lint errors in the console.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 📜 Scripts
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+mnIn the project directory, you can run:
 
-### Code Splitting
+- `npm start`: Runs the app in development mode.
+- `npm test`: Launches the test runner.
+- `npm run build`: Builds the app for production to the `build` folder.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🎨 UI/UX Highlights
 
-### Analyzing the Bundle Size
+- **Visual Style**: Dark mode focus with "slate" color palette (`bg-slate-950`), accented with gradient blobs and glass effects.
+- **Components**: specific focus on cards, data tables, and clean typography suitable for information-heavy academic dashboards.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 🔜 Future Roadmap
 
-### Making a Progressive Web App
+- [ ] Backend Integration (API connection for real-time data).
+- [ ] Authentication System (Login/Logout).
+- [ ] Role-based access (Student vs. Teacher views).
+- [ ] Export functionality for grades and schedules (PDF/Excel).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+*Desarrollado para la gestión académica eficiente.*
