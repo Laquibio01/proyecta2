@@ -101,4 +101,9 @@ mnIn the project directory, you can run:
 
 ---
 
-*Desarrollado para la gestión académica eficiente.*
+*Desarrollado por:*
+Elias Hernandez 
+Luis Dominguez
+Joshua Rodriguez
+Joel Rocha
+David Bustillos*
